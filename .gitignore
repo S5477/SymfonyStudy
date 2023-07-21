@@ -7,4 +7,20 @@
 /public/bundles/
 /var/
 /vendor/
+/composer.phar
 ###< symfony/framework-bundle ###
+
+###> friendsofphp/php-cs-fixer ###
+/.php-cs-fixer.php
+/.php-cs-fixer.cache
+###< friendsofphp/php-cs-fixer ###
+
+###> phpunit/phpunit ###
+/phpunit.xml
+.phpunit.result.cache
+###< phpunit/phpunit ###
+
+.env.test
+.php-cs-fixer.dist.php
+composer.lock
+symfony.lock

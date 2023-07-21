@@ -7,6 +7,7 @@ use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Uid\UuidV7;
 
 class AuthController extends AbstractController
 {
@@ -24,6 +25,8 @@ class AuthController extends AbstractController
         $entityManager->persist($user);
 
         $entityManager->flush();
+
+        $user = $entityManager->getRepository(User::class)->find(UuidV7::fromString('01897662-2ba9-799e-86f1-f9a1b6869bd0'));
 
         var_dump($user);
 
