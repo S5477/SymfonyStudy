@@ -24,3 +24,4 @@
 .php-cs-fixer.dist.php
 composer.lock
 symfony.lock
+.idea
